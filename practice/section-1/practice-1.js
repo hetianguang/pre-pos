@@ -1,5 +1,13 @@
 'use strict';
 
 function collectSameElements(collectionA, collectionB) {
-  return '实现练习要求，并改写该行代码。';
+  const result = []
+
+  collectionA.map(number => {
+    if (collectionB.indexOf(number) != -1) {
+      result.push(number)
+    }
+  })
+
+  return result;
 }

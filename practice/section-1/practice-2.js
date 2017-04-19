@@ -1,5 +1,11 @@
 'use strict';
 
 function collectSameElements(collectionA, collectionB) {
-  return '实现练习要求，并改写该行代码。';
+  let result = []
+  collectionA.map(number => {
+    if (collectionB[0].includes(number)) {
+      result.push(number)
+    }
+  })
+  return result
 }
